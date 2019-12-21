@@ -113,20 +113,6 @@ for(var cont=1; cont<=10; cont++){
     console.log(cont);
 }
 
-/////////////////////////////////////77777
-for (var i = 1; i<=50; i++){
-    var mensaje ="";
-    if (i % 3 === 0){
-        mensaje += 'fizz';
-    }
-    if ( i % 5 === 0) {
-        mensaje +='Buzz';
-    }
-    if (mensaje === ""){
-        mensaje = i;
-    }
-  console.log(mensaje)
-}
 
 ////////////////////////////////////////////7
 for (var i=1; i<=30; i+=3){
