@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <p> Ingrese Usuarios </p>
+
+        <form>
+            <input id="nombre" type="text" placeholder="nombre">
+            <input id="edad" tyep="text" placeholder="edad">
+            <button id="boton" type="reset" onclick="Captura();" > Agregar </button>
+        </form>
+    </div>
+    <div class="container">
+
+        <table class="table" id="tabla">
+            <thead class="thead">
+                <tr>
+                    <th> Nombre </th>
+                    <th> Edad </th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <script>
+        
+function Captura(){
+    // console.log("capturado");
+    function Persona(nombre,edad){
+       this.nombre=nombre;
+       this.edad=edad;
+    }
+    var nombreCaptura = document.getElementById("nombre").Value;
+    console.log(nombreCaptura);
+    var edadCaptura = document.getElementById("edad").Value;
+
+    nuevoSujeto = new Persona (nombreCaptura, edadCaptura );
+    console.log(nuevoSujeto);
+    agregar();
+ }
+ var baseDatos= [];
+ function agregar(){
+   baseDatos.push(nuevoSujeto);
+   console.log(baseDatos);
+ document.getElementById("tabla").innerHTML += '<tbody><dt>'+nuevoSujeto.nombre+'</td><td>'+nuevoSujeto.nombre+'</td></tbody>'
+ }
+    
+    </script>
+</body>
+
+</html>
