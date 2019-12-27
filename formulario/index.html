@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+	<script src="formulario.js"></script>
+</head>
+
+<body>
+
+
+    <div class="container"> 
+        <form class="formulario" id="formulario" method="POST">
+            <div class="group">
+                <label for="nombre"> Nombre (s)</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Usuario" pattern="/\w\d\s{2}/g" required>
+                
+            </div>
+
+            <div class="group">
+                <label for="APaterno"> Apellido Paterno</label>
+                <input name="APaterno" id="APaterno" placeholder="Apellido paterno" pattern="/\w\d\s{2}/g" title="Solo dos espacios en blanco" required>
+            </div>
+            <div class="group">
+                <label for="AMaterno"> Apellido Materno </label>
+                <input type="text" name="AMaterno" id="AMaterno" required placeholder="Apellido Materno" pattern="/\w\d\s{2}/g" title="solo dos espacios en blanco">
+            </div>
+            <div class="group">
+                <label for="edad"> Agregar  Edad</label>
+                <input type="text" name="edad" id="edad" pattern="/^[0-9]$/" required title="solo numeros"> 
+
+            <div class="group">
+                <label for="numeroTarjeta"> Agregar numero de tarjeta rajeta</label>
+                <input type="text" id="numeroTarjeta" autocomplete="off" required pattern="^(?:4\d([\- ])?\d{6}\1\d{5}|(?:4\d{3}|5[1-5]\d{2}|6011)([\- ])?\d{4}\2\d{4}\2\d{4})$" title="Visa, Mastercard, Discover">
+            </div> 
+
+            <div class="group">
+                <label for="email"> Correo electronico </label>
+                <input type="email" name="email" title="agregar solo direccion de  email" id="email" pattern="" required>                                                                   
+            </div> 
+
+            <div>
+                <label for="rfc"> Agregar  RfC</label>
+                <input type="rfc" name="rfc" id="rfc"  pattern="[A-Z]{3,4}\d{6}[A-Z]{3}\[A-Z]{3}"  required title="Inicial del apellido paterno , materno, nombre los dis ultimo sdigitos del año de nacimiento mes de nacimient"> 
+                
+            </div>
+
+ 
+         
+            <button type="reset"   class="btn-agregar" onclick="addPerson()" > Agregar persona </button>
+        </form>
+    </div>
+    <div class="container">
+
+        <table class="table" id="tabla">
+            <thead class="thead">
+                <tr>
+                    <th> Nombre </th>
+                    <th> Apellido paterno </th>
+                    <th> Apellido Materno </th>
+                    <th>Edad </th>
+                    <th> Numero de tarjeta</th>
+                    <th> Email </th>
+                    <th> RFC</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+ 
+ 
+
+    <script src="js/formulario.js"> </script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>

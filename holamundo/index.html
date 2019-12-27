@@ -38,9 +38,9 @@ function Captura(){
        this.nombre=nombre;
        this.edad=edad;
     }
-    var nombreCaptura = document.getElementById("nombre").Value;
+    var nombreCaptura = document.getElementById("nombre").value;
     console.log(nombreCaptura);
-    var edadCaptura = document.getElementById("edad").Value;
+    var edadCaptura = document.getElementById("edad").value;
 
     nuevoSujeto = new Persona (nombreCaptura, edadCaptura );
     console.log(nuevoSujeto);
@@ -50,7 +50,7 @@ function Captura(){
  function agregar(){
    baseDatos.push(nuevoSujeto);
    console.log(baseDatos);
- document.getElementById("tabla").innerHTML += '<tbody><dt>'+nuevoSujeto.nombre+'</td><td>'+nuevoSujeto.nombre+'</td></tbody>'
+ document.getElementById("tabla").innerHTML += '<tbody><dt>'+nuevoSujeto.nombre+'</td><td>'+nuevoSujeto.edad+'</td></tbody>'
  }
     
     </script>

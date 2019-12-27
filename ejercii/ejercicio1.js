@@ -108,7 +108,7 @@ caballo();
 
 
 
-// //Caso 3. PERROS
+// //Caso 3. PERROS 
 
 // //Tenemos  cuatro perros , un galgo , un dogo , un alano y un podenco. este  
 // //ultimo como mas que el galgo; el alamo come mas  que el galgo y menos que 
@@ -184,7 +184,7 @@ function viaje() {
 viaje();
 
 
-// // CASO 5. SILENCIO
+//  CASO 5. SILENCIO
 
 // //Si angela habla más bajo que  Rosa y 
 // //cecilia habla más alto que rosa . 
