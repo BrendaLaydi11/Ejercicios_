@@ -36,6 +36,32 @@
             <div class="group">
                 <label for="numeroTarjeta"> Agregar numero de tarjeta rajeta</label>
                 <input type="text" id="numeroTarjeta" autocomplete="off" required pattern="^(?:4\d([\- ])?\d{6}\1\d{5}|(?:4\d{3}|5[1-5]\d{2}|6011)([\- ])?\d{4}\2\d{4}\2\d{4})$" title="Visa, Mastercard, Discover">
+           
+                <!-- Visa (16 dígitos empieza por 4 )
+                Ejemplos:
+                4012888888881881
+                4012-8888-8888-1881
+                4111111111111111
+                
+                Visa (13 dígitos empieza por 4 )
+                Ejemplos:
+                4222222222222
+                42-222222-22222
+                
+                MasterCard (16 dígitos empieza por 51 - 55 )
+                Ejemplos:
+                5105105105105100
+                5105-1051-0510-5100
+                5555555555554444
+                
+                Discover (16 dígitos empieza por 6011 )
+                Ejemplos:
+                6011000990139424
+                6011-0009-9013-9424
+                6011111111111117
+                 -->
+                
+
             </div> 
 
             <div class="group">

@@ -8,21 +8,19 @@ function Persona(nombre, App, Apm, ed, numeroTar, correo, rfc) {
 
 }
 function addPerson() {
-
-    var formulario = document.getElementById('formulario').value;
-
-
+  
 
     var nom = document.getElementById('nombre').value;
-
-
+   
+  
     var App = document.getElementById('APaterno').value;
 
-    var Apm = document.getElementById('AMaterno').value;
 
+    var Apm = document.getElementById('AMaterno').value;
+     
 
     var ed = document.getElementById('edad').value;
-   
+
 
     var numeroTar = document.getElementById('numeroTarjeta').value;
 
@@ -32,25 +30,21 @@ function addPerson() {
     var rfc = document.getElementById('rfc').value;
 
 
-
-
-
-    if (add("agregar correctament")) {
-        formulario.reset
-
-    }
-    else {
-        alert("se agrego correctamente")
-    }
-
-
-
     newPerson = new Persona(nom, App, Apm, ed, numeroTar, correo, rfc)
     console.log(newPerson);
     add();
 
 
+ var obj={
+   
+    nom:nom,
+    App:App,
+    Apm:Apm,
+    
+ }
+ console.log(obj);
 }
+
 
 
 
@@ -64,6 +58,26 @@ function add() {
         '</td><td>' + newPerson.rfc;
 
 
-
 }
 
+
+
+// let promesa = new Promise((resolve, reject) => {
+//     if  (true ){ 
+//         resolve('La  operacion fue  un exito');
+
+//     } else {
+//         reject('Ocurrio  un error');
+
+//     }
+// });
+
+// promesa 
+//         .then((response) => {
+//             console.log('Response', response);
+
+//         })
+//         .catch((error) =>{
+//             console.log('Error ' ,error);
+//         })
+    
