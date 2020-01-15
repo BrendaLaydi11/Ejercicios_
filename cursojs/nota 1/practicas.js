@@ -26,7 +26,7 @@
 //     })
 // }
 // function tarea1(tarea) {
-//     return new Promise(function (resolve, reject) {
+//      return new Promise(function (resolve, reject) {
 //         document.write('Desayunar')
 //         setTimeout(resolve, Despertar)
 //     })
@@ -36,6 +36,6 @@
 // deberes().then(() => deberes())
 //     .then(() => tareas())
 //     .then(() => tarea1())
-//     .catch((message) => {
-//         document.write(`Error, ${message}`)
+//     .catch(() => {
+//         document.write(`Error, ${'Error esto bo va bien '}`)
 //     })
