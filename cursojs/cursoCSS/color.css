@@ -1,0 +1,182 @@
+p {
+    display: flex;
+    align-items: center;
+}
+
+.p1 {
+    background-color: tomato;
+    border: 6px gray;
+    margin: 35px;
+}
+
+.p2 {
+    background-color: orange;
+    border: 10px dotted black;
+    background-clip: content-box;
+    margin: 35px;
+}
+
+.p3 {
+    background-color: dodgerblue;
+    border-bottom-right-radius: 25px 50px;
+    margin: 35px;
+}
+
+.p4 {
+    background-color: mediumseagreen;
+    border-bottom-style: dotted;
+    margin: 35px;
+}
+
+.p5 {
+    /* border: 10px dotted black; */
+    background-color: gray;
+    background-clip: padding-box;
+    border: 5px dotted red;
+    margin: 35px;
+}
+
+.p6 {
+    border: 10px dotted black;
+    background-color: slateblue;
+    background-clip: border-box;
+    margin: 35px;
+}
+
+.p7 {
+    border-bottom: 4px dotted blue;
+    background-color: violet;
+    border-bottom-left-radius: 50px 20px;
+    margin: 35px;
+}
+
+.p8 {
+    background-color: lightgray;
+    border-bottom-style: solid;
+    border-bottom-color: coral;
+    margin: 35px;
+}
+
+/* .icon{
+    border-top: 5px solid rgb(68, 0, 255);
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 4s infinite;
+  backface-visibility: visible;
+}
+@keyframes mymove{
+    from{ left: 0px;}
+    to {left: 1200px;}
+} */
+
+/* all: unset;
+all: initial; */
+
+/* background-color: yellow;
+color: red; */
+
+.otro {
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    position: relative;
+    animation: myfirst infinite;
+    animation-direction: alternate;
+    animation-duration: 3s;
+}
+
+@keyframes myfirst {
+    0% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background: green;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+div.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#borderimg1 {
+    text-align: center;
+    border: 20px solid transparent;
+    padding: 15px;
+    border-image-source: url(../cursoCSS/media/marge.jpg);
+    /* border-image-repeat: repeat; */
+    /* border-image-slice: 30%; */
+}
+
+#borderimg {
+    padding: 15px;
+    border-image-source: url(../cursoCSS/media/marge.jpg);
+    border-image-width: 10px;
+    border-left: 5px solid red;
+}
+
+/* div.relative {
+    
+    position: relative;
+    width: 50%;
+    bottom: 5px;
+    border: 3px solid #8AC007;
+  }  */
+
+span {
+    border: 5px solid red;
+    padding: 0em 1em;
+    border-radius: 16px;
+    font-size: 24px;
+    line-height: 2;
+}
+
+span.ex2 {
+    -webkit-box-decoration-break: slice;
+    -o-box-decoration-break: slice;
+    box-decoration-break: slice;
+}
+
+#example2 {
+    caption-side: top;
+}
+
+h1.borderimg {
+    clear: both;
+}
+
+img {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+/* div {
+    display: -webkit-flex; 
+    -webkit-flex-direction: row-reverse; 
+    display: flex;
+    flex-direction: row-reverse;
+  }
+   */

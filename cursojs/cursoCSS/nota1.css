@@ -1,0 +1,53 @@
+body {
+    background-color: lightskyblue;
+    background-image: url("../cursoCSS/media/imagen1.jpg");
+    /* border-image: url(../cursoCSS/media/imagen1.jpg) 30 round ;                                                                                                 */
+    /* background-repeat: no-repeat; */
+    /* background-position: right top; */
+    background-size: contain, cover;
+    background-position: left top;
+    /* background-attachment: fixed;
+    background-attachment: scroll;  */
+    /* background-repeat: repeat-x; */
+}
+
+h1 {
+    color: rgb(97, 77, 80);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/*  Selector  por elemento */
+
+p {
+    font-family: fantasy;
+    font-size: 50px;
+}
+
+/* Selector  por id 
+*/
+
+#nombre {
+    text-align: center;
+    color: rgb(110, 67, 67);
+}
+
+/* Selector  por clase - pueden referirse a mas de  una clase
+   */
+
+p.texto {
+    text-align: center;
+    color: black;
+}
+
+/*   cambia los todos los elementos  */
+
+* {
+    color: rgb(214, 214, 33);
+}
+
+Agrupan las clases h1, p {
+    text-align: center;
+    color: red;
+    box-shadow: 5px 10px;
+}
