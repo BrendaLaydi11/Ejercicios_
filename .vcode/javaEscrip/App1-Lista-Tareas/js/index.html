@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gestor Lista Tareas</title>
+    <link rel="stylesheet" href="css/../../css/estilos.css">
+
+</head>
+
+<body>
+    <nav class="navbar ">
+        <div class="contenedor">
+            <div class="navbar-header">
+                <a class="navbar-brand">Lista de Tareas</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="contenido">
+            <div class="contenedor">
+                <div class="form ">
+                    <input type="text" class="form-control" id="recordatorio" placeholder="Nueva tarea...">
+                    <div class="form-group ">
+                        <button class="btn " onclick="listaTareas.agregarTareaClick();">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="list-group" id="listaTareas">
+            </ul>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
