@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/stylos.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="js/script.js"></script>
+
+    <div class=" contenedor">
+        <nav class="navbar">
+            <div class="navbar-header">
+                <a> Creador de memes </a>
+            </div>
+        </nav>
+        <div class="principal">
+            <div class="area-canvas">
+                <canvas class="imagen-canvas" id="imagenCanvas">
+
+                    ¡Lo sentimos! Su navegador
+                    no provee soporte para canvas
+                </canvas>
+            </div>
+
+            <div class="area-entrada">
+                <div class="form-group">
+                    <label for="imagen"> Imagen:</label>
+                    <input type="file" class="form-control" id="imagen" accept=".png,.jpeg,.jpg">
+                </div>
+                <div class="form-group">
+                    <label for="textoSuperior">Texto superior</label>
+                    <input type="text" class="form-control" id="textoSuperior"> 
+                </div>
+               <div class="form-group">
+                   <label for="textoInferior"> Texto inferior:</label>
+                   <input type="text" class="form-control" id="textoInferior"> 
+               </div>
+               <button >
+               <a class="btn boton-descarga" id="descargarMeme" download="meme.png"> Descargar Meme </a>
+            </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="error" ></div>
+
+</body>
+
+</html>
