@@ -3,18 +3,190 @@ body {
     height: 100%;
     margin: 0;
     font-family: "apercu", sans-serif;
+    font-size: 13px;
 }
-header{
-    position: fixed;
+
+header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
+    height: 20%;
     line-height: 73px;
     font-size: 13px;
     font-weight: 400;
     background-color: #f4f7f6;
     z-index: 302;
+}
+.char{
+    position: relative;
+    display: inline-block;
+    color: #999;
+    font-size: 20px;
+    text-align: center;
+    stroke-dashoffset: 67;
+    animation: show75 3s;
+
+}
+.center-xs{
+    margin-top:10%
+
+}
+/* .chart figcaption {
+    padding: 50px 25px;
+    width: 170px;
+    height: 170px;
+    border-radius: 100px;
+    line-height: 50px;
+  } */
+  
+
+.outer {
+    fill: transparent;
+    border-color: #202121;
+        stroke-width: 5;
+        stroke: tomato;
+ }
+
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.logo-com {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: 800;
+    transition: all 0.3s ease-in-out;
+}
+
+.far.fa-share-alt {
+    font-weight: 1000;
+    border: transparent;
+    color: white;
+}
+
+.comp {
+    background-color: transparent;
+}
+
+.far.fa-share-alt:hover {
+    color: #49c5b6;
+    ;
+}
+
+.logo-com:hover {
+    transition: all 0.3s ease-in-out;
+    border-color: #49c5b6;
+}
+
+.section2 {
+    margin-top: 5%;
+    color: white;
+}
+
+.reens {
+    color: #49c5b6;
+    text-decoration: none;
+}
+
+.i-spye {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.datos {
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.imagen-fondo {
+    background-image: url(./../media/Tigre-e1537475681159.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 675px;
+    background-position: center;
+    background-size: cover;
+    white-space: nowrap;
+    margin-top: 0;
+}
+
+.imagen-fondo:hover {
+    opacity: 0.75;
+}
+
+.imagenes-almacenadas {
+    height: 1000px;
+}
+
+.header-2 {
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: row;
+    /* align-content: center;
+    justify-content: center; */
+    position: relative;
+    border-bottom: 1px solid #E6EAEA;
+    height: 68px;
+}
+
+.item {
+    padding: 0;
+}
+
+.item.btn-menu {
+    min-width: 115px;
+    height: 70px;
+    border-right: 1px solid #E6EAEA;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-menu .fas.fa-bars {
+    top: -10px;
+    margin-right: 3px;
+    vertical-align: middle;
+    padding: 3px;
+}
+
+.fas.fa-bars {
+    position: relative;
+    display: inline-block;
+    width: 2px;
+    height: 0px;
+    font-weight: 600;
+}
+
+.icono {
+    padding-top: 10%;
+    margin-left: 15%;
+}
+
+.btn-menu.men {
+    transition: all 0.3s ease-in-out;
+    margin: 0;
+    padding: 0;
+}
+
+.box-right {
+    display: flex;
+    justify-content: end;
+    flex: 1;
+    flex-direction: row;
+    padding-top: 1%;
 }
 
 .header-top {
@@ -56,52 +228,253 @@ h1 {
 .center-text {
     align-content: center;
     justify-content: center;
-
 }
-.right{
+
+.right {
     text-align: right;
 }
+
 .redes-sociales {
     margin-right: 10px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
     text-align: center;
-
-    
 }
 
-li{
+li {
     list-style: none;
     padding: 8px;
 }
 
-i{
+i {
     color: black;
 }
-.header-2{
-    height: 70px;
+
+.box {
+    box-sizing: inherit;
+}
+
+span.men {
+    padding-left: 10%;
+    font-size: 13px;
+}
+
+.icon-search {
     width: 100%;
+}
+
+.fad-fa-search {
+    visibility: visible;
+    width: auto;
+    height: 17px;
+    margin-top: 9px;
+}
+
+img {
+    width: 5%;
+}
+
+.contend {
+    /* width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase; */
+}
+
+.title {
+    text-align: center;
+    margin-top: -3%;
+}
+
+.logo {
+    margin-right: 13%;
+}
+
+.enlace {
+    text-decoration: none;
+    color: #202121;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#mostrar {
+    width: 15%;
+    height: 35%;
+    margin-top: 0%;
+    margin-left: -87px;
+    height: 35%;
+    margin-top: 5%;
+}
+
+button {
+    width: 172px;
+    height: 70px;
+    padding-top: 0;
+    margin-top: 0px;
+    margin-bottom: 0;
+    background-color: #49c5b6;
+    border: none;
+    color: white;
+}
+
+.login {
+    font-weight: 200;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    margin-left: 74%;
+    margin-top: -3%;
+}
+
+.decoration {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.other-sherach {
+    /* height: 100%;
+    padding-left: 0;
+    align-content: center;
+    display: block;
+    width: 100%; */
+}
+
+input[type=text] {
+    width: 74%;
+    height: 59px;
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+    padding-left: 1%;
+    background-color: #f4f7f6;
+}
+
+.boton {
     position: relative;
-    justify-content: space-between;
+    width: 66px;
+    height: 70px;
+    background-color: #202121;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    top: 0;
+    left: 5px;
+}
+
+.dia {
+    padding: 0 0px 0 0;
+    color: black;
+    margin: 2%;
+    font-size: 13px;
+}
+
+.hrf {
+    display: contents;
+}
+
+.boton:hover {
+    opacity: 0.75;
+}
+
+.btn.button {
+    text-align: right;
+    margin-top: -40px;
+}
+
+#mostra {
+    display: none;
+}
+
+div#content {
+    display: none;
+    padding: 10px;
+    background-color: #f6f6f6;
+    width: 200px;
+    cursor: pointer;
+}
+
+.tit {
+    display: none;
+    
+}
+
+.dates {
+    padding-left: 5%;
+    margin-top: 0%;
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+a[type="text"] {
+    font-size: 16px;
+    color: white;
+    font-weight: 100;
+}
+
+.imagenes-almacenadas {
+    height: 1000px;
+}
+
+.text {
+    width: 85%;
+}
+
+.box-right.tit {
+    position: relative;
+    display: flex;
     align-items: center;
-    border-bottom: 1px solid #E6EAEA;
+    width: 100%;
+}
+
+.tit {
+    position: fixed;
+    margin-left: 9%;
+    margin-top: -5%;
+    width: 100%;
+    flex-direction: row;
+    /* height: 70px;*/
+}
+
+.fech {
+    padding-top: 3%;
+    text-align: left;
     display: flex;
     flex-direction: row;
 }
-.box{
-    width: 8%;
-    margin-left: 2%;
-    border-right: 1px solid #E6EAEA;
-}
-span.men{
-    padding-left: 10%;
-}
+
 
 
 @media screen and (max-width: 900px) {
-
-   .header-top {
-       display: none;
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        font-family: "apercu", sans-serif;
+        font-size: 13px;
+    }
+    .header-top {
+        display: none;
+    }
+    div.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+    .enlace {
+        text-decoration: none;
+        color: #202121;
+        font-size: 40px;
+        font-weight: 600;
+        transition: width 3s;
+        transition-delay: 1s;
+    }
+    .enlace:hover {
+        background: rgba(0, 0, 0, 0.5);
     }
 }

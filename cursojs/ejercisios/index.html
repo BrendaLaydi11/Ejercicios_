@@ -8,16 +8,25 @@
     <link rel="stylesheet" href="./css/stylos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+        type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
     <title>Document</title>
 </head>
 
 <body>
     <script src="./js/ejercicios.js"></script>
-    <header class="header-principal">
+
+    <header type="text" id="search-text" class="header-principal">
         <div class="header-top">
+
             <div class="left">
                 <span class="link">ENGLISH</span>
             </div>
+
 
             <div class="center-text">
                 <h1 class="box-center"> The awards of design, creativity and innovation on the internet
@@ -33,28 +42,122 @@
                         </a></li>
                     <li><a href="https://facebook.com/">
                             <i class="fab fa-facebook-f"> </i>
-                 </a></li>
+                        </a></li>
                 </ul>
             </div>
         </div>
+        </div>
+    </header>
 
-        <div class="header-2">
+ <div clasa="row center-xs mddle-xs" >
+    <div class="sticky">
+        <div class="header-2" id="navbar">
             <div class="box">
-            <div class="item btn-menu">
-                <div class="icono">
-                    <a href="#modal">
-                        <div id="modal" class="modal">
-                            <div class="modal-contenido">
-                                <a class=""> </a>
 
-                            </div>
-                        </div>
-                    <i class="fas fa-bars"> </i></a> 
-                    <span class="men">MENU</span>
+                <div class="item btn-menu">
+                    <div class="icono">
+                        <i class="fas fa-bars"></i>
+                        <span class="men">MENU</span>
+                    </div>
                 </div>
+
+            </div>
+
+            <div class="box-right">
+                <div class="icon-search btn-search" id="myForm" type="">
+                    <img id="myForm" type="submit" onclick="openForm()" class="fad-fa-search"
+                        src="./media/search-solid (1).svg">
+                    <div class="contend" id="display">
+                        <div class="title"> <span class="logo">
+                                <a class="enlace" href="https://www.awwwards.com/">
+                                    awwwards.
+                                </a> </span> </div>
+                        <div class="login">
+
+                            <a class="decoration" href="register"> REGISTER / LOGIN</a>
+                        </div>
+                        <div class="btn button">
+                            <button> <span>SUBMIT YOUR SITE </span></button>
+                        </div>
+                    </div>
                 </div>
             </div>
-    </header>
+        </div>
+
+
+        <div class="other-sherach">
+            <div class="tit" id="Form">
+                <input id="myForm" class="input-text" type="text"
+                    placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL)">
+                <div class="hrf"><a class="dia" href="https://www.awwwards.com/websites/"> SHOW FILTERS </a></div>
+                <button id="myForm" class="boton" type="submit" onclick="closeForm()"> X </button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+</div>
+    <div class="imagen-fondo">
+        <div class="compartir">
+            <div class="fech">
+                <p class="text"> <span class="dates"> Site of the Day <a id="demo" type="text"> February 10, 2020
+                        </a></span> </p>
+                <div class="logo-com">
+                    <button class="comp" type="submit" id="compar"><i class="far fa-share-alt"></i></button>
+                </div>
+
+            </div>
+
+
+            <section class="section2">
+                <div class="row center-xs mddle-xs">
+                    <div class="tile column col-xs-10 col-lg-5">
+                        <h1 class="i-spye"> i-Spy </h1>
+                        <div class="row center-xs mddle-xs datos">
+                            By
+                            <strong><a href="" class="reens"> REns </a> from new zealand wthi 7.71 </strong>
+                        </div>
+
+                        <div class="tile column col-xs-10 col-lg-5">
+                            <div class="card-info">
+                                <div class=" center-xs row middle-xs">
+                                    <figure class="chart" data-percent="75">
+                                        <!-- <figcaption>90%</figcaption> -->
+                                        <svg width="200" height="200">
+                                            <figcaption>90%</figcaption>
+                                            <circle class="outer" cx="60" cy="60" r="30"
+                                                transform="rotate(-90, 95, 95)" />
+                                               
+                                        </svg>
+                                        
+                                    </figure>
+                                </div>
+                                <div class="foot-image center-xs">
+                                    <h2> ISTE</h2>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <div class="imagenes-almacenadas">
+
+            </div>
+
+        </div>
+    </div>
+
+
 
 </body>
 
