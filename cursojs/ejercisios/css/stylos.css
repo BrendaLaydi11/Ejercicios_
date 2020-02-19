@@ -17,30 +17,144 @@ header {
     background-color: #f4f7f6;
     z-index: 302;
 }
-.char{
+
+.char {
     position: relative;
     display: inline-block;
-    color: #999;
-    font-size: 20px;
+    font-size: 14px;
     text-align: center;
+}
+
+.tile {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.chart[data-percent='75'] .outer {
+    stroke-dashoffset: 100;
+    animation: show75 4s;
+    stroke-dasharray: tomato;
+}
+
+.chart[data-percent='70'] .outer {
+    stroke-dashoffset: 100;
+    animation: show75 4s;
+    stroke: tomato;
+}
+
+.chart[data-percent='90'] .outer {
     stroke-dashoffset: 67;
+    animation: show75 4s;
+    stroke: #3c948b
+}
+
+.chart[data-percent='95'] .outer {
+    stroke-dashoffset: 67;
+    animation: show75 4s;
+    stroke: #1a99aa;
+}
+
+.chart[data-percent='100'] .outer {
+    stroke-dashoffset: 67;
+    animation: show75 4s;
+    stroke: #00FCA3;
+}
+
+.chart[data-percent='100'] .outer {
+    stroke-dashoffset: 100;
     animation: show75 3s;
-
-}
-.center-xs{
-    margin-top:10%
-
+    stroke: #00FCA3;
 }
 
-  
+.chart[data-percent='100'] .outer {
+    stroke-dashoffset: 67;
+    animation: show75 4s;
+    stroke: #4CAF50
+}
+
+@keyframes show75 {
+    from {
+        stroke-dashoffset: 400;
+    }
+}
 
 .outer {
     fill: transparent;
-    border-color: #202121;
-        stroke-width: 5;
-        stroke: tomato;
- }
+    stroke: #ecd06f;
+    stroke-width: 3;
+    stroke-dasharray: 534;
+}
 
+.c:hover{
+    color: #4CAF50;
+}
+
+.card-info:hover .tooltip-box{
+    display:block;
+}
+
+
+.tooltip-box {
+   display: none;
+    position: absolute;
+    background-color: #4CAF50;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin: -28% -4% -2%;
+}
+
+.tooltip-box::after {
+    content: "";
+    display: block;
+    border-top: 10px solid #4CAF50;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    bottom: -10px;
+}
+
+.til {
+    justify-content: center;
+    text-align: center;
+    margin-left: 14%;
+}
+
+figure {
+    width: 15%;
+    height: 1%;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 3%;
+}
+
+.texto2 {
+    padding-top: 72px;
+    width: 0;
+    justify-content: center;
+    margin-left: 0%;
+    font-size: 14px;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: -93px;
+    padding-top: 0;
+    margin-left: 6px;
+    font-size: 21px;
+}
+
+.card-info {
+    width: 18%;
+    margin-top: 2%;
+    position: relative;
+    display: inline-block;
+}
 
 div.sticky {
     position: -webkit-sticky;
@@ -118,7 +232,7 @@ div.sticky {
 }
 
 .imagen-fondo:hover {
-    opacity: 0.75;
+    opacity: .90;
 }
 
 .imagenes-almacenadas {
@@ -129,8 +243,6 @@ div.sticky {
     background-color: #f4f7f6;
     display: flex;
     flex-direction: row;
-    /* align-content: center;
-    justify-content: center; */
     position: relative;
     border-bottom: 1px solid #E6EAEA;
     height: 68px;
@@ -269,13 +381,6 @@ img {
     width: 5%;
 }
 
-.contend {
-    /* width: 100%;
-    display: flex;
-    flex-direction: row;
-    text-transform: uppercase; */
-}
-
 .title {
     text-align: center;
     margin-top: -3%;
@@ -326,14 +431,6 @@ button {
     width: 100%;
     font-size: 13px;
     font-weight: 500;
-}
-
-.other-sherach {
-    /* height: 100%;
-    padding-left: 0;
-    align-content: center;
-    display: block;
-    width: 100%; */
 }
 
 input[type=text] {
@@ -390,9 +487,8 @@ div#content {
     cursor: pointer;
 }
 
-.tit {
-    display: none;
-    
+.tile {
+    width: 100%;
 }
 
 .dates {
@@ -430,6 +526,7 @@ a[type="text"] {
     margin-top: -5%;
     width: 100%;
     flex-direction: row;
+    display: none;
     /* height: 70px;*/
 }
 
@@ -440,7 +537,10 @@ a[type="text"] {
     flex-direction: row;
 }
 
-
+.spinner {
+    widows: 100%;
+    background-color: #4CAF50;
+}
 
 @media screen and (max-width: 900px) {
     body {
